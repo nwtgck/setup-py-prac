@@ -4,20 +4,11 @@ language: python
 
 python:
   - 3.4
-
+  # TODO Add versions
 
 addons:
   apt:
     packages:
-##      - libatlas-base-dev # (from: https://qiita.com/jooex/items/61a9169f2f88580d15ff)
-#      - libatlas-dev
-#      - gfortran          # (from: https://stackoverflow.com/a/34038311/2885946)
-#      - liblapack-dev     # (from: https://www.blog.umentu.work/ubuntupython3-scipy%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E6%99%82%E3%81%AB%E3%80%8C-no-lapackblas-resources-found%E3%80%8D%E3%81%A8%E3%81%84%E3%81%86%E3%82%A8%E3%83%A9%E3%83%BC/)
-#
-#      # (from: http://segafreder.hatenablog.com/entry/2016/08/21/135942)
-#      - libatlas3gf-base
-#      - libblas-dev # (from: https://qiita.com/jkawamoto/items/873bb905becc44acd3bc)
-
     # (from: https://github.com/dnouri/nolearn/blob/master/.travis.yml)
     - libblas-dev
     - liblapack-dev
@@ -36,3 +27,8 @@ script:
 
 after_success:
   - coveralls
+
+cache:
+  - apt
+  - directories:
+    - $HOME/.cache/pip
