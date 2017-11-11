@@ -4,7 +4,8 @@ language: python
 
 python:
   - 3.4
-  # TODO Add versions
+  - 3.5
+  - 3.6
 
 addons:
   apt:
