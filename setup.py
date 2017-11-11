@@ -3,7 +3,7 @@ from distutils.core import setup
 
 setup(
     name='nwtgck_hello',
-    version='0.1.0-SNAPSHOT',
+    version='0.1.0',
     description='setup.py practice',
     author='Ryo Ota',
     author_email='nwtgck@gmail.com',
