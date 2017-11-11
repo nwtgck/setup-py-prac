@@ -1,0 +1,16 @@
+# (from: https://qiita.com/masashi127/items/5bfcba5cad8e82958844)
+
+language: python
+
+python:
+  - 3.3
+  - 3.4
+
+install:
+  - pip install coveralls
+
+script:
+  - coverage run --source=nwtgck_hello_test setup.py test
+
+after_success:
+  - coveralls
