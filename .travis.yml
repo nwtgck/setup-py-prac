@@ -5,8 +5,8 @@ language: python
 python:
   - 3.4
 
-virtualenv:
-  system_site_packages: true # (from: https://stackoverflow.com/a/18986891/2885946)
+#virtualenv:
+#  system_site_packages: true # (from: https://stackoverflow.com/a/18986891/2885946)
 
 addons:
   apt:
@@ -22,8 +22,9 @@ addons:
       - python-numpy
       - python-scipy
 
+      - libblas-dev # (from: https://qiita.com/jkawamoto/items/873bb905becc44acd3bc)
 
-      - python-setuptools # (from: https://stackoverflow.com/a/22540309/2885946)
+#      - python-setuptools # (from: https://stackoverflow.com/a/22540309/2885946)
 
 install:
   - pip install coveralls
