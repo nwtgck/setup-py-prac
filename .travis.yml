@@ -26,6 +26,9 @@ addons:
 
       - python-setuptools # (from: https://stackoverflow.com/a/22540309/2885946)
 
+before_install:
+  - pip install -U pip setuptools wheel # (from: https://github.com/dnouri/nolearn/blob/master/.travis.yml)
+
 install:
   - pip install coveralls
 
