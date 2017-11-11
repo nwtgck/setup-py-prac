@@ -30,6 +30,7 @@ before_install:
   - pip install -U pip setuptools wheel # (from: https://github.com/dnouri/nolearn/blob/master/.travis.yml)
 
 install:
+  - travis_wait travis_retry pip install -r requirements.txt # (from: https://github.com/dnouri/nolearn/blob/master/.travis.yml)
   - pip install coveralls
 
 script:
