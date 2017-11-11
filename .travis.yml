@@ -8,11 +8,11 @@ python:
 addons:
   apt:
     packages:
-#      - liblapack-dev     # (from: https://www.blog.umentu.work/ubuntupython3-scipy%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E6%99%82%E3%81%AB%E3%80%8C-no-lapackblas-resources-found%E3%80%8D%E3%81%A8%E3%81%84%E3%81%86%E3%82%A8%E3%83%A9%E3%83%BC/)
 #      - libatlas-base-dev # (from: https://qiita.com/jooex/items/61a9169f2f88580d15ff)
 #      - gfortran          # (from: https://stackoverflow.com/a/34038311/2885946)
 
 
+      - liblapack-dev     # (from: https://www.blog.umentu.work/ubuntupython3-scipy%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E6%99%82%E3%81%AB%E3%80%8C-no-lapackblas-resources-found%E3%80%8D%E3%81%A8%E3%81%84%E3%81%86%E3%82%A8%E3%83%A9%E3%83%BC/)
       # (from: http://segafreder.hatenablog.com/entry/2016/08/21/135942)
       - libatlas3gf-base
       - libatlas-dev
