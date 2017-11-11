@@ -5,8 +5,8 @@ language: python
 python:
   - 3.4
 
-virtualenv:
-  system_site_packages: true # (from: https://stackoverflow.com/a/18986891/2885946)
+#virtualenv:
+#  system_site_packages: true # (from: https://stackoverflow.com/a/18986891/2885946)
 
 addons:
   apt:
