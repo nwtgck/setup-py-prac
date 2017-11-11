@@ -18,13 +18,13 @@ addons:
       # (from: http://segafreder.hatenablog.com/entry/2016/08/21/135942)
       - libatlas3gf-base
       - libatlas-dev
-      # only required by the DISTRIB="ubuntu" build:
-      - python-numpy
-      - python-scipy
-
+#      # only required by the DISTRIB="ubuntu" build:
+#      - python-numpy
+#      - python-scipy
+#
       - libblas-dev # (from: https://qiita.com/jkawamoto/items/873bb905becc44acd3bc)
-
-      - python-setuptools # (from: https://stackoverflow.com/a/22540309/2885946)
+#
+#      - python-setuptools # (from: https://stackoverflow.com/a/22540309/2885946)
 
 before_install:
   - pip install -U pip setuptools wheel # (from: https://github.com/dnouri/nolearn/blob/master/.travis.yml)
