@@ -22,6 +22,9 @@ addons:
       - python-numpy
       - python-scipy
 
+
+      - python-setuptools # (from: https://stackoverflow.com/a/22540309/2885946)
+
 install:
   - pip install coveralls
 
