@@ -19,6 +19,7 @@ addons:
       - libatlas3gf-base
       - libatlas-dev
       # only required by the DISTRIB="ubuntu" build:
+      - python-numpy
       - python-scipy
 
 install:
